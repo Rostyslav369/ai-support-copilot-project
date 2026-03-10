@@ -1,0 +1,259 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #e8eefc;
+  background: #0f172a;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(139, 92, 246, 0.18), transparent 35%),
+    #0f172a;
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+.page {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2.6rem;
+}
+
+.subtitle {
+  max-width: 760px;
+  color: #cbd5e1;
+  margin-top: 12px;
+}
+
+.status-card {
+  min-width: 240px;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.status-label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 20px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid #334155;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.muted {
+  color: #94a3b8;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+input[type="file"],
+textarea {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid #475569;
+  background: #111827;
+  color: #f8fafc;
+  padding: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 14px;
+  padding: 13px 18px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button.danger {
+  background: linear-gradient(135deg, #dc2626, #f97316);
+}
+
+.alert {
+  margin-bottom: 18px;
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+
+.alert.error {
+  background: rgba(127, 29, 29, 0.5);
+  border: 1px solid #ef4444;
+}
+
+.alert.success {
+  background: rgba(21, 128, 61, 0.4);
+  border: 1px solid #22c55e;
+}
+
+.doc-list {
+  margin-top: 26px;
+}
+
+.doc-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.doc-item p {
+  margin: 4px 0 0;
+  color: #94a3b8;
+}
+
+.answer-box {
+  margin-top: 24px;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 18px;
+  background: rgba(2, 6, 23, 0.55);
+}
+
+.answer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.answer-top h3 {
+  margin: 0 0 6px;
+}
+
+.confidence {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.answer-text {
+  white-space: pre-wrap;
+  color: #f8fafc;
+  margin-top: 16px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.badge.ok {
+  background: rgba(22, 163, 74, 0.18);
+  color: #86efac;
+  border: 1px solid rgba(34, 197, 94, 0.5);
+}
+
+.badge.review {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.45);
+}
+
+.sources {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.source-card {
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(15, 23, 42, 0.75);
+}
+
+.source-card p {
+  margin: 6px 0;
+  color: #cbd5e1;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+}
